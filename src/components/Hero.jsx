@@ -59,13 +59,13 @@ function Hero() {
           </a>
 
           <a
-            href="/resume.pdf"
-            download
-            className="button secondary"
-          >
-            <Download size={16} />
-            Download Resume
-          </a>
+  href={`${import.meta.env.BASE_URL}resume.pdf`}
+  download="resume.pdf"
+  className="button secondary"
+>
+  <Download size={16} />
+  Download Resume
+</a>
 
         </div>
 
@@ -100,10 +100,7 @@ function Hero() {
 
         <div className="profile-container">
 
-          <img
-            src="/images/profile.jpg"
-            alt="Kanna Nani"
-          />
+          <img src={`${import.meta.env.BASE_URL}images/profile.jpg`} alt="Kanna Nani" />
 
         </div>
 

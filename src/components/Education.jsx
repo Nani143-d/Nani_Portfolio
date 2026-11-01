@@ -82,10 +82,7 @@ function Education() {
 
           <div className="university-image">
 
-            <img
-              src="/images/education.jpg"
-              alt="Dhanalakshmi Srinivasan University"
-            />
+          <img src={`${import.meta.env.BASE_URL}images/education.jpg`} alt="Dhanalakshmi Srinivasan University" />
 
             <div className="university-caption">
               Dhanalakshmi Srinivasan University

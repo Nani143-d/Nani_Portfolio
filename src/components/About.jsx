@@ -18,10 +18,7 @@ function About() {
 
         <div className="about-image-box">
 
-          <img
-            src="/images/about.jpg"
-            alt="About Kanna Nani"
-          />
+        <img src={`${import.meta.env.BASE_URL}images/about.jpg`} alt="About Kanna Nani" />
 
         </div>
 

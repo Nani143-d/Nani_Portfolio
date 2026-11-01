@@ -15,8 +15,7 @@ const projects = [
     title:
       "AI Smart Agriculture Platform",
 
-    image:
-      "/images/agriculture-project.jpg",
+    image: `${import.meta.env.BASE_URL}images/agriculture-project.jpg`,
 
     description:
       "An AI-powered agriculture platform combining machine learning, computer vision and agricultural data to support crop health and farming decisions.",
@@ -40,7 +39,13 @@ const projects = [
       "Keras",
       "OpenCV",
       "MySQL"
-    ]
+    ],
+
+    projectLink:
+      "https://ai-smart-agriculture-g78z.onrender.com",
+
+    githubLink:
+      "https://github.com/Nani143-d/AI-Smart-Agriculture"
   },
 
   {
@@ -51,8 +56,7 @@ const projects = [
     title:
       "IPL Match & Player Performance Analysis",
 
-    image:
-      "/images/ipl-project.jpg",
+    image: `${import.meta.env.BASE_URL}images/ipl-project.jpg`,
 
     description:
       "A data analytics project analyzing historical IPL data to identify player, team, venue and season performance trends.",
@@ -70,7 +74,13 @@ const projects = [
       "Matplotlib",
       "Seaborn",
       "Power BI"
-    ]
+    ],
+
+    projectLink:
+      "https://ipl-pulse-dashboard.streamlit.app/",
+
+    githubLink:
+      "https://github.com/Nani143-d/IPL-Data-Analysis"
   }
 ];
 
@@ -84,7 +94,6 @@ function Projects() {
       <div className="section-number">
         04 / PROJECTS
       </div>
-
 
       <div className="section-title-row">
 
@@ -101,7 +110,6 @@ function Projects() {
         </div>
 
       </div>
-
 
       <div className="projects-list">
 
@@ -144,7 +152,6 @@ function Projects() {
 
               </div>
 
-
               <div className="project-content">
 
                 <div className="project-meta">
@@ -153,16 +160,13 @@ function Projects() {
                   </span>
                 </div>
 
-
                 <h3>
                   {project.title}
                 </h3>
 
-
                 <p>
                   {project.description}
                 </p>
-
 
                 <ul>
 
@@ -182,7 +186,6 @@ function Projects() {
 
                 </ul>
 
-
                 <div className="technology-list">
 
                   {project.technologies.map(
@@ -195,22 +198,22 @@ function Projects() {
 
                 </div>
 
-
                 <div className="project-buttons">
 
                   <a
-                    href="#contact"
+                    href={project.projectLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="button primary"
                   >
                     View Project
                     <ArrowUpRight size={16} />
                   </a>
 
-
                   <a
-                    href="https://github.com/Nani143-d"
+                    href={project.githubLink}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="button secondary"
                   >
                     <Github size={16} />
